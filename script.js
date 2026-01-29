@@ -1,3 +1,5 @@
+const user1Restaurants = [];
+
 function showUser1Screen() {
     // Hide welcome screen
     let welcomeScreen = document.getElementById("welcome-screen");

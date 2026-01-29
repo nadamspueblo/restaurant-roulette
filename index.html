@@ -46,7 +46,7 @@
             <div class="selection-area">
                 <div class="dropdown-section">
                     <label>Choose from available restaurants:</label>
-                    <select class="restaurant-dropdown">
+                    <select class="restaurant-dropdown" id="restaurant-options">
                         <option value="">Select a restaurant...</option>
                         <option value="pizza">🍕 Tony's Pizza Palace</option>
                         <option value="burgers">🍔 Burger Barn</option>
@@ -59,12 +59,12 @@
                         <option value="seafood">🦐 Ocean's Catch</option>
                         <option value="bbq">🍖 Smoky Joe's BBQ</option>
                     </select>
-                    <button class="add-btn">Add to My List</button>
+                    <button class="add-btn" onclick="addRestaurant()">Add to My List</button>
                 </div>
                 
                 <div class="selected-restaurants">
                     <h3>Your Selected Restaurants (0/3)</h3>
-                    <div class="selected-list">
+                    <div class="selected-list" id="selected-list">
                         <div class="empty-state">
                             <p>No restaurants selected yet</p>
                         </div>
@@ -72,7 +72,7 @@
                 </div>
             </div>
             
-            <button class="primary-btn" disabled>Continue to User 2</button>
+            <button class="primary-btn" id="continue-button" onclick="gotoUser2()" disabled>Continue to User 2</button>
         </div>
     </div>
 
