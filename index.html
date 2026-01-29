@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Roulette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="screen active" id="welcome-screen">
+        <div class="container">
+            <h1>🍽️ Restaurant Roulette</h1>
+            <p class="subtitle">Can't decide where to eat? Let us help you find the perfect match!</p>
+            
+            <div class="instructions">
+                <h2>How it works:</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>User 1 selects 3 favorite restaurants</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>User 2 selects 3 favorite restaurants</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>We'll show you the restaurants you both love!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="primary-btn">Let's Get Started!</button>
+        </div>
+    </div>
+
+    <!-- User 1 Selection Screen -->
+    <div class="screen" id="user1-screen">
+        <div class="container">
+            <div class="user-header">
+                <h1>👤 User 1's Turn</h1>
+                <p>Select 3 restaurants you'd love to eat at today</p>
+            </div>
+            
+            <div class="selection-area">
+                <div class="dropdown-section">
+                    <label>Choose from available restaurants:</label>
+                    <select class="restaurant-dropdown">
+                        <option value="">Select a restaurant...</option>
+                        <option value="pizza">🍕 Tony's Pizza Palace</option>
+                        <option value="burgers">🍔 Burger Barn</option>
+                        <option value="tacos">🌮 Taco Fiesta</option>
+                        <option value="sushi">🍣 Sakura Sushi</option>
+                        <option value="italian">🍝 Mama's Italian Kitchen</option>
+                        <option value="chinese">🥡 Golden Dragon</option>
+                        <option value="mexican">🌯 El Pueblo Cantina</option>
+                        <option value="steakhouse">🥩 The Grill House</option>
+                        <option value="seafood">🦐 Ocean's Catch</option>
+                        <option value="bbq">🍖 Smoky Joe's BBQ</option>
+                    </select>
+                    <button class="add-btn">Add to My List</button>
+                </div>
+                
+                <div class="selected-restaurants">
+                    <h3>Your Selected Restaurants (0/3)</h3>
+                    <div class="selected-list">
+                        <div class="empty-state">
+                            <p>No restaurants selected yet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="primary-btn" disabled>Continue to User 2</button>
+        </div>
+    </div>
+
+    <!-- User 2 Selection Screen -->
+    <div class="screen" id="user2-screen">
+        <div class="container">
+            <div class="user-header">
+                <h1>👤 User 2's Turn</h1>
+                <p>Select 3 restaurants you'd love to eat at today</p>
+            </div>
+            
+            <div class="selection-area">
+                <div class="dropdown-section">
+                    <label>Choose from available restaurants:</label>
+                    <select class="restaurant-dropdown">
+                        <option value="">Select a restaurant...</option>
+                        <option value="pizza">🍕 Tony's Pizza Palace</option>
+                        <option value="burgers">🍔 Burger Barn</option>
+                        <option value="tacos">🌮 Taco Fiesta</option>
+                        <option value="sushi">🍣 Sakura Sushi</option>
+                        <option value="italian">🍝 Mama's Italian Kitchen</option>
+                        <option value="chinese">🥡 Golden Dragon</option>
+                        <option value="mexican">🌯 El Pueblo Cantina</option>
+                        <option value="steakhouse">🥩 The Grill House</option>
+                        <option value="seafood">🦐 Ocean's Catch</option>
+                        <option value="bbq">🍖 Smoky Joe's BBQ</option>
+                    </select>
+                    <button class="add-btn">Add to My List</button>
+                </div>
+                
+                <div class="selected-restaurants">
+                    <h3>Your Selected Restaurants (0/3)</h3>
+                    <div class="selected-list">
+                        <div class="empty-state">
+                            <p>No restaurants selected yet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="primary-btn" disabled>Find Our Match!</button>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div class="screen" id="results-screen">
+        <div class="container">
+            <div class="results-header">
+                <h1>🎉 Your Perfect Match!</h1>
+                <p>Here are the restaurants you both selected:</p>
+            </div>
+            
+            <div class="results-grid">
+                <div class="restaurant-card">
+                    <div class="restaurant-image">🍕</div>
+                    <div class="restaurant-info">
+                        <h3>Tony's Pizza Palace</h3>
+                    </div>
+                </div>
+                
+                <div class="restaurant-card">
+                    <div class="restaurant-image">🌮</div>
+                    <div class="restaurant-info">
+                        <h3>Taco Fiesta</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="secondary-btn">Start Over</button>
+                <button class="primary-btn">Choose Random Winner</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
